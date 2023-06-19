@@ -1,14 +1,17 @@
 package com.start;
 
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        var numbers = new Array(3);
-        numbers.insert(10);
-        numbers.insert(20);
-        numbers.insert(30);
-        numbers.insert(40);
-        System.out.println(numbers.indexOf(100));
-//        numbers.print();
+        var numbers = new LinkedList();
+        numbers.addFirst(10);
+        numbers.addLast(20);
+        numbers.addLast(30);
+        numbers.addLast(40);
+        numbers.reverse();
+        var array = numbers.toArray();
+        System.out.println(Arrays.toString(array));
     }
 }

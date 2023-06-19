@@ -6,6 +6,7 @@ public class LinkedList {
     private class Node {
         private int value;
         private Node next;
+        private Node previous;
 
         public Node(int value) {
             this.value = value;
@@ -111,5 +112,22 @@ public class LinkedList {
         }
 
         return array;
+    }
+
+    public void reverse() {
+        if (isEmpty()) return;
+
+        var previous = first;
+        var current = first.next;
+        while (current != null) {
+            var next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+
+        last = first;
+        last.next = null;
+        first = previous;
     }
 }
