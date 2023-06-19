@@ -10,8 +10,6 @@ public class Main {
         numbers.addLast(20);
         numbers.addLast(30);
         numbers.addLast(40);
-        numbers.reverse();
-        var array = numbers.toArray();
-        System.out.println(Arrays.toString(array));
+        System.out.println(numbers.getKthFromTheEnd(3));
     }
 }
