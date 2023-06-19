@@ -11,10 +11,15 @@ public class Main {
 //        System.out.println(Arrays.toString(array));
 
         var list = new LinkedList();
-        list.addLast(10);
+        System.out.println(list.size());
+        list.addFirst(10);
+        System.out.println(list.size());
         list.addLast(20);
         list.addLast(30);
+        System.out.println(list.size());
+
         list.removeLast();
-        System.out.println(list.contains(10));
+        list.removeFirst();
+        System.out.println(list.size());
     }
 }
