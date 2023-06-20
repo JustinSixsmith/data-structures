@@ -1,20 +1,19 @@
 package com.start;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        PriorityQueue queue = new PriorityQueue();
-        queue.add(5);
-        queue.add(3);
-        queue.add(6);
-        queue.add(1);
-        queue.add(4);
-        System.out.println(queue);
-        while (!queue.isEmpty())
-            System.out.println(queue.remove());
+        String str = "a green apple";
+
+        CharFinder finder = new CharFinder();
+        var result = finder.findFirstNonRepeatingChar(str);
+        System.out.println(result);
     }
+
 
     public static void reverse(Queue<Integer> queue) {
         Stack<Integer> stack = new Stack<>();
