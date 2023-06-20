@@ -1,15 +1,17 @@
 package com.start;
 
 
+import com.codewithmosh.StringReverser;
+
 import java.util.Arrays;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        var numbers = new LinkedList();
-        numbers.addFirst(10);
-        numbers.addLast(20);
-        numbers.addLast(30);
-        numbers.addLast(40);
-        System.out.println(numbers.getKthFromTheEnd(3));
+        String str = "(1 + 2)";
+
+        Expression exp = new Expression();
+        var result = exp.isBalanced(str);
+        System.out.println(result);
     }
 }
