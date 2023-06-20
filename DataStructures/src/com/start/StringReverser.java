@@ -2,7 +2,7 @@ package com.start;
 
 import java.util.Stack;
 
-public class stringReverser {
+public class StringReverser {
 
     public String reverse(String input) {
         if (input == null)
