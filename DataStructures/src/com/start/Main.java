@@ -1,15 +1,18 @@
 package com.start;
 
+import javax.swing.text.html.HTML;
 import java.util.*;
 import java.util.Stack;
 
 
 public class Main {
     public static void main(String[] args) {
-        String str = "green apple";
-        CharFinder finder = new CharFinder();
-        var result = finder.findFirstRepeatedChar(str);
-        System.out.println(result);
+        HashTable table = new HashTable();
+        table.put(6, "A");
+        table.put(8, "B");
+        table.put(11, "C");
+        table.put(6, "A+");
+        System.out.println(table.get(10));
     }
 
 
