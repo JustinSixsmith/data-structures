@@ -1,16 +1,14 @@
 package com.start;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 import java.util.Stack;
+
 
 public class Main {
     public static void main(String[] args) {
-        String str = "a green apple";
-
+        String str = "green apple";
         CharFinder finder = new CharFinder();
-        var result = finder.findFirstNonRepeatingChar(str);
+        var result = finder.findFirstRepeatedChar(str);
         System.out.println(result);
     }
 
